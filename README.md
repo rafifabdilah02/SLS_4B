@@ -313,7 +313,7 @@ Setelah menjalankan seeder, gunakan akun berikut untuk login:
 
 | **Resource** | **Link** |
 | :--- | :--- |
-| GitHub Repository | [https://github.com/rafifabdilah02/SLS_4B](#https://github.com/rafifabdilah02/SLS_4B) |
+| GitHub Repository | [https://github.com/2411102441306/library-management-system]([https://github.com/rafifabdilah02/SLS_4B] |
 | Figma Design | [Coming Soon] |
 | Live Demo | [Coming Soon] |
 
