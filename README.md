@@ -1,10 +1,63 @@
-# Dokumentasi Proyek: LibraryMS
+# Dokumentasi Proyek: Smart Library System
+
+## Deskripsi Singkat
+Smart Library System (SLS) adalah sistem manajemen perpustakaan digital berbasis web modern yang dibangun menggunakan Laravel 11. Sistem ini dirancang untuk membantu pengelolaan perpustakaan secara lebih efisien, interaktif, dan modern melalui integrasi dashboard analitik, sistem peminjaman cerdas, notifikasi real-time, dan AI Assistant berbasis Gemini API
+
+* **Admin** - Mengelola buku, kategori, anggota, transaksi peminjaman, laporan, dan monitoring sistem.
+* **Member** - Menelusuri katalog buku, melakukan peminjaman online, memantau riwayat, dan menggunakan AI Assistant untuk rekomendasi buku.
+
+---
+
+## Daftar Isi
+---
+* [Tentang Proyek](#tentang-proyek)
+* [Tujuan Sistem](#tujuan-sistem)
+* [Fitur Utama](#fitur-utama)
+* [Inovasi & Pembaruan Sistem](#inovasi-pembaruan-sistem)
+* [Tech Stack](#tech-stack)
+* [Struktur Database](#struktur-database)
+* [Relasi Antar Tabel](#relasi-antar-tabel)
+* [Struktur Folder](#struktur-folder)
+* [Alur Sistem](#alur-sistem)
+* [Arsitektur Backend](#arsitektur-backend)
+* [Cara Instalasi](#cara-instalasi)
+* [Akun Default](#akun-default)
+* [Struktur Tim](#struktur-tim)
+* [Timeline Proyek](#timeline-proyek)
+* [Progress Pengerjaan](#progress-pengerjaan)
+* [Risk & Challenge](#risk-challenge)
+* [Deployment Plan](#deployment-plan)
+* [Future Development](#future-development)
+* [Repository & Resource](#repository-resource)
+
+---
 
 ## Tentang Proyek
-LibraryMS adalah aplikasi web sistem manajemen perpustakaan digital yang dikembangkan sebagai proyek mata kuliah Pemrograman Web. Sistem ini dirancang untuk mempermudah pengelolaan perpustakaan dengan dua peran pengguna utama:
 
-* **Admin** - Mengelola seluruh data buku, anggota, kategori, dan proses peminjaman.
-* **Member** - Dapat menelusuri katalog buku dan mengajukan peminjaman secara online.
+Smart Library System dibuat sebagai proyek pengembangan aplikasi web modern untuk mata kuliah Pemrograman Web.
+
+Berbeda dari sistem perpustakaan biasa, proyek ini tidak hanya fokus pada CRUD data, tetapi juga menghadirkan:
+
+* Smart Borrowing Logic
+* AI Book Recommendation
+* Real-time Notification
+* Analytics Dashboard
+* Clean Service Architecture
+* Responsive Modern Dashboard UI
+
+---
+
+## Tujuan Sistem
+
+### Tujuan Utama
+
+Membangun sistem perpustakaan digital yang:
+
+* Scalable
+* Modern
+* Responsive
+* Memiliki business logic nyata
+* Siap dikembangkan menjadi enterprise system
 
 ---
 
@@ -14,45 +67,90 @@ LibraryMS adalah aplikasi web sistem manajemen perpustakaan digital yang dikemba
 
 | Nama | Nim | Peran |
 |---|---|---|
-| **Mohammad Rafif Abdilah** | **2403015086** | **Project Manager & Fullstack Developer(Lead backend, integrasi sistem, & arsitektur database)** |
-| **Putri Auliya Amanda** | **2403015086** | **Frontend Developer & UI/UX Designer(Desain Figma, slicing Blade views, & styling Tailwind CSS)** |
-| **M Akhtar Ilyas** | **2403015086** | **Backend Developer & QA Tester(CRUD fitur, keamanan token/middleware, & testing bug)** |
+| **Mohammad Rafif Abdilah** | **2403015086** | **Backend & database** |
+| **Putri Auliya Amanda** | **2403015086** | **Frontend Blade/UI** |
+| **M Akhtar Ilyas** | **2403015086** | **UI/UX + Testing + Integrasi** |
 
 ---
 
 ## Timeline & Progress Pengerjaan
 ### Status Saat Ini: Berada di Minggu ke-2. Fitur dasar backend sedang diselesaikan, dan beberapa poin sudah berhasil dicapai lebih cepat dari jadwal.
 
-## Minggu 1 — Inisiasi & Desain (Selesai - 100%)
-- [x] Setup project awal menggunakan Laravel 11
-- [x] Instalasi dan konfigurasi Laravel Breeze untuk sistem autentikasi
-- [x] Konfigurasi database MySQL dan file .env
-- [x] Pembuatan migrasi tabel dasar: categories, books, dan borrowings
-- [x] Kustomisasi tabel users (Menambahkan kolom role, phone, dan address)
-- [x] Desain UI di Figma untuk halaman utama (Dashboard Admin & Portal Member)
-- [x] Setup repository GitHub bersama beserta branch manajemen tim
+## Minggu 1 
+- [x] Setup project Laravel 11
+- [x] Konfigurasi database MySQL
+- [x] Setup environment (.env)
+- [x] Setup struktur folder project
+- [x] Setup migration database
+- [x] Membuat model utama (User, Book, Category, Borrowing)
+- [x] Setup authentication login
+- [x] Setup role admin & member
+- [x] Setup middleware role
+- [x] Membuat route awal
+- [x] Membuat struktur controller
+- [x] Setup service layer architecture
+- [ ] Mendesain dashboard admin di Figma
+- [ ] Mendesain halaman login
+- [ ] Mendesain sidebar & layout
+- [ ] Menentukan color palette & typography
+- [ ] Diskusi flow sistem & alur user
+- [ ] Setup dokumentasi testing
 
-## Minggu 2 — Backend Development (Sedang Berjalan - 60%)
-- [x] Pembuatan relasi antar Model Eloquent (User, Book, Category, Borrowing)
-- [x] Fitur backend untuk CRUD Kategori Buku oleh Admin
-- [x] Fitur backend untuk CRUD Buku lengkap dengan logic upload cover dokumen
-- [ ] Fitur backend untuk manajemen data Anggota/Member oleh Admin
-- [ ] Implementasi sistem pengajuan dan persetujuan (approval) peminjaman buku
-- [ ] Penerapan Role Middleware untuk membatasi hak akses Admin vs Member
-- [ ] Pembuatan Database Seeder untuk data dummy pengujia
+## Minggu 2
+- [x] CRUD Books
+- [x] CRUD Categories
+- [x] Borrowing System
+- [x] Return System
+- [x] Overdue Detection
+- [x] Stock Automation
+- [x] Validation Form
+- [x] Seeder dummy data
+- [x] Dashboard statistics logic
+- [x] Eloquent relationships
+- [x] Query optimization dasar
+- [ ] Membuat halaman dashboard admin
+- [ ] Membuat halaman manage books
+- [ ] Membuat halaman login responsive
+- [ ] Membuat component sidebar
+- [ ] Membuat table books
+- [ ] Sinkronisasi variable blade
+- [ ] Testing login & CRUD
+- [ ] Testing role access
 
-## Minggu 3 — Frontend & Integrasi (Belum Mulai - 0%)
-- [ ] Pembuatan layout dashboard Admin (sidebar, topbar, responsive mobile)
-- [ ] Pembuatan layout portal Member (navbar, catalog grid, footer)
-- [ ] Slicing desain Figma ke dalam kode komponen Blade Views
-- [ ] Integrasi library Chart.js untuk grafik statistik di halaman laporan admin
-- [ ] Implementasi fitur live search dan filter kategori buku
+## Minggu 3 —
+- [x] Menyiapkan data untuk frontend
+- [x] Finalisasi route & endpoint
+- [x] Finalisasi validation
+- [x] Integrasi Gemini API
+- [x] Integrasi notification realtime
+- [x] Optimasi query database
+- [ ] Integrasi blade dengan backend
+- [ ] Responsive dashboard
+- [ ] Halaman catalog member
+- [ ] Borrowing history UI
+- [ ] Statistik dashboard
+- [ ] Integrasi Chart.js
+- [ ] Integrasi fullstack
+- [ ] Testing borrowing flow
+- [ ] Testing responsive layout
+- [ ] Testing AI chatbot
 
-## Minggu 4 — Testing & Deployment (Belum Mulai - 0%)
-- [ ] Pengujian menyeluruh (Quality Assurance) untuk semua fitur dan validasi form
-- [ ] Perbaikan bug dan optimasi performa aplikasi (php artisan optimize)
-- [ ] Deployment aplikasi ke free hosting (GoogieHost)
-- [ ] Penyusunan laporan akhir dan finalisasi dokumentasi proyek
+## Minggu 4
+- [x] Fix bug backend
+- [x] Security validation
+- [x] Optimize Laravel
+- [x] Final route cleanup
+- [x] Final database cleanup
+- [ ] UI polishing
+- [ ] Final responsive fixing
+- [ ] Animation & UX refinement
+- [ ] Full system testing
+- [ ] Testing semua fitur
+- [ ] Testing edge cases
+- [ ] Bug reporting
+- [ ] Deployment ke hosting
+- [ ] Final dokumentasi
+- [ ] Persiapan presentasi
 
 ---
 
@@ -61,48 +159,56 @@ LibraryMS adalah aplikasi web sistem manajemen perpustakaan digital yang dikemba
 ### Admin
 | Fitur | Deskripsi |
 | :--- | :--- |
-| **Dashboard** | **Statistik real-time: total buku, anggota aktif, peminjaman berjalan, keterlambatan.** |
-| **Kelola Buku** | **CRUD buku lengkap dengan upload cover, filter kategori, dan pencarian.** |
-| **Kelola Anggota** | **Manajemen data anggota, detail profil, dan riwayat peminjaman.** |
-| **Kelola Peminjaman** | **Approval/reject pengajuan, monitoring status, dan tandai pengembalian.** |
-| **Kelola Kategori** | **CRUD kategori buku.** |
-| **Laporan** | **Grafik aktivitas peminjaman bulanan, kategori terpopuler, dan export data.** |
-| **Pengaturan** | **Manajemen profil dan keamanan akun admin.** |
+| Dashboard Analytics | Statistik buku, member, peminjaman, overdue. |
+| Book Management | CRUD buku + upload cover. |
+| Category Management | CRUD kategori buku. |
+| Member Management | Monitoring anggota. |
+| Borrowing Management | Approval & return system. |
+| Smart Monitoring | Deteksi keterlambatan otomatis. |
+| Real-time Notification | Notifikasi langsung. |
+| Reports & Analytics | Grafik peminjaman. |
+| AI Monitoring Assistant | Bantuan pencarian & rekomendasi. |
 
-### Member
+### Member Feautures
 | Fitur | Deskripsi |
 | :--- | :--- |
-| **Katalog Buku** | **Browse buku dengan filter kategori, pencarian, dan cek ketersediaan stok.** |
-| **Detail Buku** | **Informasi lengkap buku + tombol ajukan peminjaman.** |
-| **Riwayat Peminjaman** | **Pantau status peminjaman (pending, aktif, terlambat, selesai).** |
+| Browse Catalog | Menelusuri katalog. |
+| Smart Search | Search & filter. |
+| Book Detail | Detail lengkap buku. |
+| Borrow Request | Ajukan peminjaman. |
+| Borrow History | Riwayat peminjaman. |
+| AI Chatbot | Rekomendasi buku AI. |
+| Notification | Status peminjaman realtime. |
 
 ---
 
-## Tech Stack & Infrastruktur
+### Tech Stack & Infrastruktur
 | Komponen | Teknologi |
 |---|---|
-| **Backend Framework** | **Laravel 11** |
-| **Authentication** | **Laravel Breeze** |
-| **Frontend Styling** | **Tailwind CSS** |
-| **Database** | **MySQL 8.0** |
-| **Chart / Visualisasi** | **Chart.js** |
-| **Server Lokal** | **PHP Built-in / Laragon / XAMPP** |
-| **Version Control** | **Git + GitHub** |
-| **Design UI** | **Figma** |
-| **Deployment** | **GoogieHost (Free Hosting)** |
+| Backend Framework | Laravel 11 |
+| Frontend** | Blade + Bootstrap 5 |
+| Styling** | MySQL |
+| Authentication | Laravel Authentication |
+| AI Integration | Gemini API** |
+| Realtime** | Laravel Reverb / Pusher |
+| Chart Analytics | Chart.js |
+| Local Server | XAMPP |
+| Version Control | Git + GitHub |
+| UI Design | Figma |
 
+---
 
 ## Struktur Database
 
 ```text
-library_management
-├── users         → Data pengguna (admin & member) + role, phone, address
-├── categories    → Kategori buku (Fiksi, Non-Fiksi, Sains, dll)
-├── books         → Data buku lengkap (judul, pengarang, stok, cover)
-├── borrowings    → Transaksi peminjaman
-│                    (pending, approved, rejected, returned, overdue)
-├── sessions      → Session Laravel (default)
-└── migrations    → Riwayat migrasi database (default)
+smart_library_system
+├── users
+├── categories
+├── books
+├── borrowings
+├── notifications
+├── sessions
+└── migrations
 ```
 
 ---
@@ -110,73 +216,73 @@ library_management
 ## Relasi Antar Tabel
 
 ```text
-users       ──< borrowings >── books
-                                 │
-categories ──────────────────────┘
+users ──< borrowings >── books
+                            │
+categories ────────────────┘
 ```
 
-- Satu user dapat memiliki banyak borrowings.
-- Satu book dapat dipinjam berkali-kali.
-- Satu category dapat memiliki banyak books.
+| Relasi | Deskripsi |
+|---|---|
+| User → Borrowings | 1 user banyak transaksi |
+| Book → Borrowings | 1 buku banyak transaksi |
+| Category → Books | 1 kategori banyak buku |
 
 ---
 
-#Struktur Folder
+# Struktur Folder
 
 ```text
-library-management-system/
+Smart_Library_System/
 ├── app/
 │   ├── Http/
 │   │   ├── Controllers/
 │   │   │   ├── Admin/
+│   │   │   │   ├── DashboardController.php
 │   │   │   │   ├── BookController.php
-│   │   │   │   ├── MemberController.php
-│   │   │   │   ├── BorrowingController.php
 │   │   │   │   ├── CategoryController.php
+│   │   │   │   ├── BorrowingController.php
 │   │   │   │   └── ReportController.php
+│   │   │   │
+│   │   │   ├── Auth/
+│   │   │   │   └── AuthController.php
+│   │   │   │
 │   │   │   └── Member/
 │   │   │       ├── CatalogController.php
-│   │   │       └── BorrowingHistoryController.php
+│   │   │       ├── BorrowController.php
+│   │   │       └── HistoryController.php
+│   │   │
 │   │   └── Middleware/
-│   │       └── RoleMiddleware.php
-│   └── Models/
-│       ├── User.php
-│       ├── Book.php
-│       ├── Category.php
-│       └── Borrowing.php
+│   │       └── AdminMiddleware.php
+│   │
+│   ├── Models/
+│   │   ├── User.php
+│   │   ├── Book.php
+│   │   ├── Category.php
+│   │   ├── Borrowing.php
+│   │   └── Notification.php
+│   │
+│   └── Services/
+│       ├── DashboardService.php
+│       ├── BorrowingService.php
+│       ├── NotificationService.php
+│       └── GeminiService.php
+│
 ├── database/
 │   ├── migrations/
-│   │   ├── ..._create_users_table.php
-│   │   ├── ..._create_categories_table.php
-│   │   ├── ..._create_books_table.php
-│   │   ├── ..._create_borrowings_table.php
-│   │   └── ..._add_role_to_users_table.php
 │   └── seeders/
-│       ├── DatabaseSeeder.php
-│       ├── UserSeeder.php
-│       ├── CategorySeeder.php
-│       └── BookSeeder.php
+│
 ├── resources/
 │   └── views/
-│       ├── layouts/
-│       │   ├── admin.blade.php
-│       │   └── member.blade.php
 │       ├── admin/
-│       │   ├── dashboard.blade.php
-│       │   ├── books/
-│       │   ├── members/
-│       │   ├── borrowings/
-│       │   ├── categories/
-│       │   ├── reports/
-│       │   └── settings.blade.php
-│       └── member/
-│           ├── catalog/
-│           └── history/
+│       ├── member/
+│       └── layouts/
+│
 ├── routes/
 │   └── web.php
+│
 ├── public/
-│   └── storage/ (symlink untuk cover buku)
-├── .env.example
+├── storage/
+├── .env
 ├── composer.json
 └── README.md
 ```
@@ -187,8 +293,8 @@ Setelah menjalankan seeder, gunakan akun berikut untuk login:
 
 | **Role** | **Email** | **Password** |
 | :--- | :--- | :--- |
-| **Admin** | **admin@gmail.com** | **password123** |
-| **Member** | **member@gmail.com** | **pasword123** |
+| Admin | admin@gmail.com | password123 |
+| Member | member@gmail.com | pasword123 |
 
 ---
 
@@ -196,11 +302,20 @@ Setelah menjalankan seeder, gunakan akun berikut untuk login:
 
 | **Minggu** | **Fase** | **Aktivitas** | 
 | :--- | :--- | :--- |
-| **Minggu 1** | **Inisiasi & Desain** | **Setup Laravel, database migration, desain Figma (UI/UX), dokumentasi awal.** |
-| **Minggu 2** | **Backend Development** | **CRUD buku & kategori, sistem peminjaman, role middleware, database seeder.** |
-| **Minggu 3** | **Frontend & Integrasi** | **Pembuatan halaman Blade views, styling Tailwind, integrasi Chart.js.** | 
-| **Minggu 4** | **Testing & Deployment** | **QA testing, bug fixing, optimasi sistem, deployment ke GoogieHost.** |
+| Minggu 1 | Inisiasi & Desain | Setup Laravel, database migration, desain Figma (UI/UX), dokumentasi awal. |
+| Minggu 2 | Backend Development | CRUD buku & kategori, sistem peminjaman, role middleware, database seeder. |
+| Minggu 3 | Frontend & Integrasi | Pembuatan halaman Blade views, styling Tailwind, integrasi Chart.js. | 
+| Minggu 4 | Testing & Deployment | QA testing, bug fixing, optimasi sistem, deployment ke GoogieHost. |
 
+---
+
+# Repository & Resoure
+
+| **Resource** | **Link** |
+| :--- | :--- |
+| GitHub Repository | [https://github.com/rafifabdilah02/SLS_4B](#https://github.com/rafifabdilah02/SLS_4B) |
+| Figma Design | [Coming Soon] |
+| Live Demo | [Coming Soon] |
 
 
 
