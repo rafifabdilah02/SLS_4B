@@ -101,19 +101,19 @@ Membangun sistem perpustakaan digital yang:
 - [x] Setup layout dashboard dark theme
 
 ### Frontend & UI/UX
-- [ ] Mendesain dashboard admin di Figma
-- [ ] Mendesain halaman login
-- [ ] Mendesain sidebar & layout
-- [ ] Menentukan color palette & typography
-- [ ] Mendesain dashboard member
-- [ ] Mendesain halaman katalog buku
+- [x] Mendesain dashboard admin di Figma
+- [x] Mendesain halaman login
+- [x] Mendesain sidebar & layout
+- [x] Menentukan color palette & typography
+- [x] Mendesain dashboard member
+- [x] Mendesain halaman katalog buku
 
 ### Team Collaboration
-- [ ] Diskusi flow sistem & alur user
-- [ ] Penyusunan workflow peminjaman
-- [ ] Penyusunan flow role admin/member
-- [ ] Setup dokumentasi testing
-- [ ] Setup GitHub repository & branch workflow
+- [x] Diskusi flow sistem & alur user
+- [x] Penyusunan workflow peminjaman
+- [x] Penyusunan flow role admin/member
+- [x] Setup dokumentasi testing
+- [x] Setup GitHub repository & branch workflow
 
 ## Minggu 2 - Core Backend Development
 
@@ -137,21 +137,21 @@ Membangun sistem perpustakaan digital yang:
 - [x] Refactor authentication flow
 
 ### Frontend Development
-- [ ] Membuat halaman dashboard admin
-- [ ] Membuat halaman manage books
-- [ ] Membuat halaman login responsive
-- [ ] Membuat component sidebar
-- [ ] Membuat component topbar
-- [ ] Membuat table books
-- [ ] Membuat modal form CRUD
-- [ ] Sinkronisasi variable blade
-- [ ] Responsive layout dashboard
+- [x] Membuat halaman dashboard admin
+- [x] Membuat halaman manage books
+- [x] Membuat halaman login responsive
+- [x] Membuat component sidebar
+- [x] Membuat component topbar
+- [x] Membuat table books
+- [x] Membuat modal form CRUD
+- [x] Sinkronisasi variable blade
+- [x] Responsive layout dashboard
 
 ### Testing & QA
-- [ ] Testing login & CRUD
-- [ ] Testing role access
-- [ ] Testing borrowing flow
-- [ ] Testing database consistency
+- [x] Testing login & CRUD
+- [x] Testing role access
+- [x] Testing borrowing flow
+- [x] Testing database consistency
 
 ## Minggu 3 - Frontend Integration & Smart Features
 
@@ -162,17 +162,13 @@ Membangun sistem perpustakaan digital yang:
 - [x] Optimasi query database
 - [x] Refactor controller structure
 - [x] Cleanup duplicated route
-- [ ] Integrasi Gemini API
-- [ ] Integrasi notification realtime
-- [ ] Setup chatbot service
-- [ ] Setup AI recommendation engine
-- [ ] Setup realtime notification event
+- [x] Setup realtime notification event
 
 ### Frontend Integration
-- [ ] Integrasi blade dengan backend
-- [ ] Responsive dashboard
-- [ ] Halaman catalog member
-- [ ] Borrowing history UI
+- [x] Integrasi blade dengan backend
+- [x] Responsive dashboard
+- [x] Halaman catalog member
+- [x] Borrowing history UI
 - [ ] Statistik dashboard
 - [ ] Integrasi Chart.js
 - [ ] Integrasi fullstack
@@ -183,7 +179,6 @@ Membangun sistem perpustakaan digital yang:
 ### Testing & QA
 - [ ] Testing borrowing flow
 - [ ] Testing responsive layout
-- [ ] Testing AI chatbot
 - [ ] Testing notification realtime
 - [ ] Testing frontend-backend integration
 
